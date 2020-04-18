@@ -16,7 +16,10 @@ const MovieTab = (props) => {
         }
         `
     }
+    console.log("Component update");    
     return (
+        <div>
+
         <ul className="tabs nav nav-pills">
             <li className="nav-item">
                 <div 
@@ -47,6 +50,8 @@ const MovieTab = (props) => {
                 </div>
             </li>
         </ul>
+        </div>
+ 
     )
 
 }

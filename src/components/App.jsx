@@ -17,8 +17,9 @@ class App extends React.Component {
       moviesWillWatch: [],
       sort_by: "revenue.desc",
       pageNumber: 1,
-      total_page: 0
+      total_page: 33
     };
+    this.updatePagination = this.updatePagination.bind(this);
   }
   
   componentDidMount() {
@@ -38,9 +39,10 @@ class App extends React.Component {
       return response.json()
     })
     .then((data) => {
+
       this.setState({
         movies: data.results,
-        total_page: data.total_page
+        total_page: data.total_pages
       })
     })
   }
@@ -81,6 +83,15 @@ class App extends React.Component {
     })
   }
 
+  updatePagination(Update) {
+    const UpNum = this.state.pageNumber + Update 
+    this.setState({
+      pageNumber: UpNum
+    }
+    )
+//    this.fetchMovie();
+  }  
+
   render() {
     console.log("App render", this);
     return (
@@ -92,6 +103,52 @@ class App extends React.Component {
                 <MovieTab sort_by={this.state.sort_by} updateSortBy={this.updateSortBy}/>
               </div>
             </div>
+            {// ==============================================
+            }
+            
+            <div className="col-4">
+            <nav aria-label="Page navigation movie">
+            <ul className="pagination justify-content-center">
+              <li
+                className={`page-item ${
+                  this.state.pageNumber === 1 ? "disabled" : ""
+                }`}
+              >
+                <button 
+                  className="page-link"
+                  //href="https://mail.ru"
+                  onClick={this.updatePagination.bind(this,-1)}
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                  <span className="sr-only">Previous</span>
+                </button>
+              </li>
+
+              <li
+                className={`page-item ${
+                  this.state.pageNumber === this.state.total_page
+                    ? "disabled"
+                    : ""
+                }`}
+              >
+                <button className="page-link" onClick={this.updatePagination.bind(this,1)} aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span className="sr-only">Next</span>
+                </button>
+              </li>
+            </ul>
+            
+          </nav>
+          Current page {this.state.pageNumber} Total page {this.state.total_page}
+          </div>
+
+
+            {// ==============================================
+            }
+
+
+
             <div className="row">
               {this.state.movies.map(movie => {
                 return (
