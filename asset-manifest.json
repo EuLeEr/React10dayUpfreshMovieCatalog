@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React10dayUpfreshMovieCatalog/static/css/main.5d937b94.chunk.css",
+    "main.js": "/React10dayUpfreshMovieCatalog/static/js/main.627959a7.chunk.js",
+    "main.js.map": "/React10dayUpfreshMovieCatalog/static/js/main.627959a7.chunk.js.map",
+    "runtime-main.js": "/React10dayUpfreshMovieCatalog/static/js/runtime-main.f55b9715.js",
+    "runtime-main.js.map": "/React10dayUpfreshMovieCatalog/static/js/runtime-main.f55b9715.js.map",
+    "static/css/2.69121389.chunk.css": "/React10dayUpfreshMovieCatalog/static/css/2.69121389.chunk.css",
+    "static/js/2.79ce769d.chunk.js": "/React10dayUpfreshMovieCatalog/static/js/2.79ce769d.chunk.js",
+    "static/js/2.79ce769d.chunk.js.map": "/React10dayUpfreshMovieCatalog/static/js/2.79ce769d.chunk.js.map",
+    "index.html": "/React10dayUpfreshMovieCatalog/index.html",
+    "precache-manifest.0c9c8e46270e4ef4894e7df16abcf5fb.js": "/React10dayUpfreshMovieCatalog/precache-manifest.0c9c8e46270e4ef4894e7df16abcf5fb.js",
+    "service-worker.js": "/React10dayUpfreshMovieCatalog/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/React10dayUpfreshMovieCatalog/static/css/2.69121389.chunk.css.map",
+    "static/css/main.5d937b94.chunk.css.map": "/React10dayUpfreshMovieCatalog/static/css/main.5d937b94.chunk.css.map",
+    "static/js/2.79ce769d.chunk.js.LICENSE.txt": "/React10dayUpfreshMovieCatalog/static/js/2.79ce769d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f55b9715.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.79ce769d.chunk.js",
+    "static/css/main.5d937b94.chunk.css",
+    "static/js/main.627959a7.chunk.js"
+  ]
+}
